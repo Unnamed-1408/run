@@ -101,11 +101,12 @@
     var setTime = document.getElementById('time');
     if (hh > 7 && hh < 12){
         setTime.innerText = 'Hi ' + '上午好';
-    }else if(hh > 12 && hh < 18){
+    }else if(hh >= 12 && hh < 18){
         setTime.innerText = 'Hi ' + '下午好';
     }else{
         setTime.innerText = 'Hi ' + '晚上好';
     }
+    console.log(hh)
 </script>
 </body>
 </html>
